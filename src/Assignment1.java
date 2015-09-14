@@ -84,7 +84,7 @@ public class Assignment1 {
 			boolean right_triangle = false;
 			if (Math.max(side_one, Math.max(side_two, side_three)) == side_three)
 			{
-					 right_triangle = ((side_one*side_one) + (side_two*side_two) == (side_three*side_three));
+					 right_triangle = ( Math.round(side_one*side_one) +  Math.round(side_two*side_two) == Math.round(side_three*side_three));
 					 
 					 System.out.println("side 3 is the biggest");
 					 System.out.println("Side 1 Squared" + side_one * side_one);
@@ -96,7 +96,7 @@ public class Assignment1 {
 			else
 			{
 				if (Math.max(side_one, Math.max(side_two,side_three)) == side_one) {
-					 right_triangle = ((side_one*side_one) == (side_two*side_two) + (side_three*side_three));
+					 right_triangle = ( Math.round(side_one*side_one) ==  Math.round(side_two*side_two) +  Math.round(side_three*side_three));
 					 System.out.println("side 1 is the biggest");
 					 System.out.println("Right Triangle: " + right_triangle);
 					 
@@ -104,7 +104,7 @@ public class Assignment1 {
 				else
 					if (Math.max(side_one, Math.max(side_two,side_three)) == side_two) 
 					{
-						 right_triangle = ((side_one*side_one) + (side_three*side_three) == (side_two*side_two) );
+						 right_triangle = ( Math.round(side_one*side_one) +  Math.round(side_three*side_three) ==  Math.round(side_two*side_two) );
 						 System.out.println("side 2 is the biggest");
 						 System.out.println("Right Triangle: " + right_triangle);
 						 
