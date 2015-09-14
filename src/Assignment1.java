@@ -1,4 +1,5 @@
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class Assignment1 {
@@ -49,7 +50,9 @@ public class Assignment1 {
 			else
 			{
 				System.out.println("invalid triangle");
-				System.exit(0);
+				return "invalid triangle";
+				
+				//System.exit(0);
 			}
 		
 			
@@ -82,16 +85,29 @@ public class Assignment1 {
 			if (Math.max(side_one, Math.max(side_two, side_three)) == side_three)
 			{
 					 right_triangle = ((side_one*side_one) + (side_two*side_two) == (side_three*side_three));
+					 
+					 System.out.println("side 3 is the biggest");
+					 System.out.println("Side 1 Squared" + side_one * side_one);
+					 System.out.println("Side 2 Squared" + side_two * side_two);
+					 System.out.println("Side 3 Squared" + side_three * side_three);
+					 System.out.println("Right Triangle: " + right_triangle);
+					 
 			}
 			else
 			{
 				if (Math.max(side_one, Math.max(side_two,side_three)) == side_one) {
 					 right_triangle = ((side_one*side_one) == (side_two*side_two) + (side_three*side_three));
+					 System.out.println("side 1 is the biggest");
+					 System.out.println("Right Triangle: " + right_triangle);
+					 
 				}
 				else
 					if (Math.max(side_one, Math.max(side_two,side_three)) == side_two) 
 					{
 						 right_triangle = ((side_one*side_one) + (side_three*side_three) == (side_two*side_two) );
+						 System.out.println("side 2 is the biggest");
+						 System.out.println("Right Triangle: " + right_triangle);
+						 
 					}
 					else 
 					{
@@ -102,13 +118,14 @@ public class Assignment1 {
 			if(right_triangle)
 			{
 				 right = "right";
+				 
 			}
 			else
 			{
 				 right ="not right";
 			}
 			
-			
+			System.out.println( right + " " + triangle_type);
 			return right + " " + triangle_type;
 				
 		}
@@ -117,10 +134,44 @@ public class Assignment1 {
 		//junit test
 		@Test
 		public void myTestMethod (){
+			System.out.println("\n");
+			System.out.println("Executing Test 1:");
 			assertEquals("right scalene triangle", Triangle(3,4,5));
+			System.out.println("\n");
+			
+		}
+		@Test
+		public void myTestMethod2 (){
+			System.out.println("\n");
+			System.out.println("Executing Test 2:");
+			assertEquals("invalid triangle", Triangle(3,1,2));
+			System.out.println("\n");
+		}
+		
+		@Test
+		public void myTestMethod3 (){
+			System.out.println("\n");
+			System.out.println("Executing Test 3:");
+			assertEquals("right isosceles triangle", Triangle(3,1,2));
+			System.out.println("\n");
+			
 		}
 
-
+		@Test
+		public void myTestMethod4 (){
+			System.out.println("\n");
+			System.out.println("Executing Test 4:");
+			assertEquals("not right equilateral triangle", Triangle(3,3,3));
+			
+		}
+		
+		@Test
+		public void myTestMethod5 (){
+			System.out.println("\n");
+			System.out.println("Executing Test 5:");
+			assertEquals("right isosceles triangle", Triangle(1.00,1.00, Math.sqrt(2) ));
+			
+		}
 	}
 
 
