@@ -2,7 +2,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class Assignment1 
+public class Assignment1 {
 
 	//public static void main(String[] args) {
 
