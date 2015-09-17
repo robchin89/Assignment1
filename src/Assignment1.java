@@ -170,8 +170,26 @@ public class Assignment1 {
 			System.out.println("\n");
 			System.out.println("Executing Test 5:");
 			assertEquals("right isosceles triangle", Triangle(1.00,1.00, Math.sqrt(2) ));
-			
 		}
+		@Test
+			public void myAssignment2Test1 (){
+				System.out.println("\n");
+				System.out.println("Executing Test 5:");
+				assertEquals("invalid triangle", Triangle(1,-1, 1 ));
+			}
+		@Test
+				public void myAssignment2Test2 (){
+					System.out.println("\n");
+					System.out.println("Executing Test 5:");
+					assertEquals("invalid triangle", Triangle(2,4,6 ));
+				}
+		@Test
+					public void myAssignment2Test3 (){
+						System.out.println("\n");
+						System.out.println("Executing Test 5:");
+						assertEquals("invalid triangle", Triangle(2,3,5 ));
+					}
+		
 	}
 
 
