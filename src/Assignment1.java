@@ -39,6 +39,8 @@ public class Assignment1 {
 		
 		public String Triangle(double side_one, double side_two, double side_three)
 		{
+			
+			
 			//triangle inequality theorem -- constraint/assumption
 			if ((side_one + side_two > side_three) && (
 			side_two + side_three > side_one) && (
@@ -127,8 +129,11 @@ public class Assignment1 {
 			
 			System.out.println( right + " " + triangle_type);
 			return right + " " + triangle_type;
+			
+			}
+
 				
-		}
+
 		
 		
 		//junit test
@@ -189,6 +194,63 @@ public class Assignment1 {
 						System.out.println("Executing Test 5:");
 						assertEquals("invalid triangle", Triangle(2,3,5 ));
 					}
+		
+		@Test
+		public void myAssignment2Team4Test1 (){
+			System.out.println("\n");
+			System.out.println("Executing Test 5:");
+			assertEquals("invalid triangle", Triangle(-1, 0, 99999 ));
+		}
+		@Test
+		public void myAssignment2Team4Test2 (){
+			System.out.println("\n");
+			System.out.println("Executing Test 5:");
+			assertEquals("invalid triangle", Triangle(1, 1, 2.1 )); //changed input1 A to 1, because test case does not follow requirements
+		}
+		
+		@Test
+		public void myAssignment2Team4Test3 (){
+			System.out.println("\n");
+			System.out.println("Executing Test 5:");
+			assertEquals("invalid triangle", Triangle(0,0,0 ));
+		}
+		@Test
+		public void myAssignment2Team5Test1 (){
+			System.out.println("\n");
+			System.out.println("Executing Test 5:");
+			assertEquals("right scalene triangle", Triangle(3,4,5 ));
+		}
+		@Test
+		public void myAssignment2Team5Test2 (){
+			System.out.println("\n");
+			System.out.println("Executing Test 5:");
+			assertEquals("not right equilateral triangle", Triangle( (2^31)-1, (2^31)-1, (2^31)-1 ));
+		}
+		@Test
+		public void myAssignment2Team5Test3 (){
+			System.out.println("\n");
+			System.out.println("Executing Test 5:");
+			assertEquals("invalid triangle", Triangle(100,100,1000 ));
+		}
+		
+		@Test
+		public void myAssignment2Team6Test1 (){
+			System.out.println("\n");
+			System.out.println("Executing Test 5:");
+			assertEquals("invalid triangle", Triangle(5,10,20 ));
+		}
+		@Test
+		public void myAssignment2Team6Test2 (){
+			System.out.println("\n");
+			System.out.println("Executing Test 5:");
+			assertEquals("invalid triangle", Triangle( 5, 6, 1)); //must provide 3 sides
+		}
+		@Test
+		public void myAssignment2Team6Test3 (){
+			System.out.println("\n");
+			System.out.println("Executing Test 5:");
+			assertEquals("invalid triangle", Triangle(5, 10, 20));
+		}
 		
 	}
 
