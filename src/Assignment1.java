@@ -40,6 +40,10 @@ public class Assignment1 {
 		public String Triangle(double side_one, double side_two, double side_three)
 		{
 			
+			if (side_one<0 | side_two<0 | side_three <0){
+				return "Error with Inputs";
+			}
+			
 			
 			//triangle inequality theorem -- constraint/assumption
 			if ((side_one + side_two > side_three) && (
@@ -180,7 +184,7 @@ public class Assignment1 {
 			public void myAssignment2Test1 (){
 				System.out.println("\n");
 				System.out.println("Executing Test 5:");
-				assertEquals("invalid triangle", Triangle(1,-1, 1 ));
+				assertEquals("Error with Inputs", Triangle(1,-1, 1 ));
 			}
 		@Test
 				public void myAssignment2Test2 (){
@@ -192,14 +196,14 @@ public class Assignment1 {
 					public void myAssignment2Test3 (){
 						System.out.println("\n");
 						System.out.println("Executing Test 5:");
-						assertEquals("invalid triangle", Triangle(2,3,5 ));
+						assertEquals("right isosceles triangle", Triangle(1, 1, Math.sqrt(2) ));
 					}
 		
 		@Test
 		public void myAssignment2Team4Test1 (){
 			System.out.println("\n");
 			System.out.println("Executing Test 5:");
-			assertEquals("invalid triangle", Triangle(-1, 0, 99999 ));
+			assertEquals("Error with Inputs", Triangle(-1, 0, 99999 ));
 		}
 		@Test
 		public void myAssignment2Team4Test2 (){
