@@ -258,6 +258,42 @@ public class Assignment1 {
 			System.out.println("Executing Test 5:");
 			assertEquals("invalid triangle", Triangle(5, 10, 20));
 		}
+		@Test
+		public void myAssignment2Team2Test1 (){
+			System.out.println("\n");
+			System.out.println("Executing Test 5:");
+			assertEquals("invalid triangle", Triangle(0,0,0 )); //apple, bat, cod can't be entered here
+		}
+		@Test
+		public void myAssignment2Team2Test2 (){
+			System.out.println("\n");
+			System.out.println("Executing Test 5:");
+			assertEquals("Error with Inputs", Triangle( -5.4, .5, (2/3) ) ); 
+		}
+		@Test
+		public void myAssignment2Team2Test3 (){
+			System.out.println("\n");
+			System.out.println("Executing Test 5:");
+			assertEquals("invalid triangle", Triangle(3,9,3));
+		}
+		@Test
+		public void myAssignment2Team1Test1 (){
+			System.out.println("\n");
+			System.out.println("Executing Test 5:");
+			assertEquals("not right scalene triangle", Triangle(534541,454551,455531 ));
+		}
+		@Test
+		public void myAssignment2Team1Test2 (){
+			System.out.println("\n");
+			System.out.println("Executing Test 5:");
+			assertEquals("right isosceles triangle", Triangle( 0.12332,0.12332, 0.12312) ); 
+		}
+		@Test
+		public void myAssignment2Team1Test3 (){
+			System.out.println("\n");
+			System.out.println("Executing Test 5:");
+			assertEquals("invalid triangle", Triangle(1,2,50));
+		}
 		
 	}
 
