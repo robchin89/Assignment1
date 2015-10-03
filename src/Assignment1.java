@@ -1,12 +1,40 @@
+import java.io.Console;
+import java.util.Scanner;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class Assignment1 {
 
-	//public static void main(String[] args) {
+	public static void main(String[] args) {
 
-	//}
+		
+	
+		Scanner in = new Scanner (System.in);
+		System.out.println("Enter Side A: \n");
+		String input = in.nextLine();
+		System.out.println("Enter Side B: \n");
+		String input2 = in.nextLine();
+		System.out.println("Enter Side C: \n");
+		String input3 = in.nextLine();
+		try 
+		{
+		double double_input = Double.parseDouble(input);
+		double double_input2 = Double.parseDouble(input2);
+		double double_input3 = Double.parseDouble(input3);
+		
+		Assignment1 test = new Assignment1();
+
+		test.Triangle(double_input, double_input2, double_input3);
+		
+		}
+		catch (NumberFormatException ignore) 
+		{
+		
+			System.out.println("MUST ENTER NUMBERS");
+			System.exit(0);
+		}
+	}
 	
 	
 	//my new change
@@ -142,13 +170,13 @@ public class Assignment1 {
 				
 
 		
-		
+	/*	
 		//junit test
 		@Test
 		public void myTestMethod (){
 			System.out.println("\n");
 			System.out.println("Executing Test 1:");
-			assertEquals("right scalene triangle", Triangle(3,4,5));
+			assertEquals("not right isosceles triangle", Triangle(6, 6, 4));
 			System.out.println("\n");
 			
 		}
@@ -294,6 +322,8 @@ public class Assignment1 {
 			System.out.println("Executing Test 5:");
 			assertEquals("invalid triangle", Triangle(1,2,50));
 		}
+		
+		*/
 		
 	}
 
