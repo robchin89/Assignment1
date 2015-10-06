@@ -28,12 +28,14 @@ public class Assignment1 {
 		String test2 = test.Triangle(double_input, double_input2, double_input3);
 		
 		System.out.println(test2);
-		
+		in.close();
+		System.exit(0);
 		}
 		catch (NumberFormatException ignore) 
 		{
 		
 			System.out.println("MUST ENTER NUMBERS");
+			in.close();
 			System.exit(0);
 		}
 	}
