@@ -25,7 +25,9 @@ public class Assignment1 {
 		
 		Assignment1 test = new Assignment1();
 
-		test.Triangle(double_input, double_input2, double_input3);
+		String test2 = test.Triangle(double_input, double_input2, double_input3);
+		
+		System.out.println(test2);
 		
 		}
 		catch (NumberFormatException ignore) 
@@ -81,12 +83,12 @@ public class Assignment1 {
 			side_two + side_three > side_one) && (
 			side_three + side_one > side_two)){
 				
-				System.out.println("Executing program...");
+				//System.out.println("Executing program...");
 				
 			}
 			else
 			{
-				System.out.println("invalid triangle");
+				//System.out.println("invalid triangle");
 				return "invalid triangle";
 				
 				//System.exit(0);
@@ -123,32 +125,33 @@ public class Assignment1 {
 			{
 					 right_triangle = ( Math.round(side_one*side_one) +  Math.round(side_two*side_two) == Math.round(side_three*side_three));
 					 
-					 System.out.println("side 3 is the biggest");
-					 System.out.println("Side 1 Squared" + side_one * side_one);
-					 System.out.println("Side 2 Squared" + side_two * side_two);
-					 System.out.println("Side 3 Squared" + side_three * side_three);
-					 System.out.println("Right Triangle: " + right_triangle);
+					// System.out.println("side 3 is the biggest");
+					// System.out.println("Side 1 Squared" + side_one * side_one);
+					// System.out.println("Side 2 Squared" + side_two * side_two);
+					// System.out.println("Side 3 Squared" + side_three * side_three);
+					// System.out.println("Right Triangle: " + right_triangle);
 					 
 			}
 			else
 			{
 				if (Math.max(side_one, Math.max(side_two,side_three)) == side_one) {
 					 right_triangle = ( Math.round(side_one*side_one) ==  Math.round(side_two*side_two) +  Math.round(side_three*side_three));
-					 System.out.println("side 1 is the biggest");
-					 System.out.println("Right Triangle: " + right_triangle);
+				//	 System.out.println("side 1 is the biggest");
+				//	 System.out.println("Right Triangle: " + right_triangle);
 					 
 				}
 				else
 					if (Math.max(side_one, Math.max(side_two,side_three)) == side_two) 
 					{
 						 right_triangle = ( Math.round(side_one*side_one) +  Math.round(side_three*side_three) ==  Math.round(side_two*side_two) );
-						 System.out.println("side 2 is the biggest");
-						 System.out.println("Right Triangle: " + right_triangle);
+					//	 System.out.println("side 2 is the biggest");
+					//	 System.out.println("Right Triangle: " + right_triangle);
 						 
 					}
 					else 
 					{
-					 System.out.println("error");
+				///	 System.out.println("error");
+						return "error";
 					}
 			}		
 				
@@ -162,7 +165,7 @@ public class Assignment1 {
 				 right ="not right";
 			}
 			
-			System.out.println( right + " " + triangle_type);
+			//System.out.println( right + " " + triangle_type);
 			return right + " " + triangle_type;
 			
 			}
