@@ -118,6 +118,7 @@ public class Assignment1 {
 					}
 			
 			String right = "";
+			String e = "";
 			
 			
 			//test if right triangle
@@ -325,6 +326,11 @@ public class Assignment1 {
 			System.out.println("\n");
 			System.out.println("Executing Test 5:");
 			assertEquals("invalid triangle", Triangle(1,2,50));
+		}
+		
+		@Test
+		public void codecoverageTestcase1 (){
+			assertEquals("right scalene triangle", Triangle(3,5,4));
 		}
 		
 	}
