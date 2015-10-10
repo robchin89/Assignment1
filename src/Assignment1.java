@@ -5,10 +5,10 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class Assignment1 {
-
+/*
 	public static void main(String[] args) {
 
-		
+	 String test2222 ="test22222";
 	
 		Scanner in = new Scanner (System.in);
 		System.out.println("Enter Side A: \n");
@@ -39,8 +39,7 @@ public class Assignment1 {
 			System.exit(0);
 		}
 	}
-	
-	
+*/	
 	//my new change
 	
 
@@ -51,7 +50,7 @@ public class Assignment1 {
 		//test 8:07PM adding commit
 		//test 8:18PM commit
 		
-		public boolean TestInteger(int arg){
+	/*	public boolean TestInteger(int arg){
 			
 			if (arg == 1)
 			{
@@ -61,7 +60,7 @@ public class Assignment1 {
 			{
 				return false;
 			}
-		}
+		}*/
 		
 		// a program reads three numbers.
 		//
@@ -172,10 +171,10 @@ public class Assignment1 {
 			
 			}
 
-				
-
 		
-	/*	
+
+	
+	
 		//junit test
 		@Test
 		public void myTestMethod (){
@@ -197,7 +196,7 @@ public class Assignment1 {
 		public void myTestMethod3 (){
 			System.out.println("\n");
 			System.out.println("Executing Test 3:");
-			assertEquals("right isosceles triangle", Triangle(3,1,2));
+			assertEquals("invalid triangle", Triangle(3,1,2));
 			System.out.println("\n");
 			
 		}
@@ -328,8 +327,7 @@ public class Assignment1 {
 			assertEquals("invalid triangle", Triangle(1,2,50));
 		}
 		
-		*/
-		
 	}
+
 
 
