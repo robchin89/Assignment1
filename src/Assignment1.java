@@ -6,6 +6,7 @@ import static org.junit.Assert.*;
 
 public class Assignment1 {
 
+	/*
 	public static void main(String[] args) {
 
 	 String test2222 ="test22222";
@@ -39,7 +40,7 @@ public class Assignment1 {
 			System.exit(0);
 		}
 	}
-	
+	*/
 	//my new change
 	
 
@@ -174,7 +175,7 @@ public class Assignment1 {
 
 		
 
-/*	
+
 	
 		//junit test
 		@Test
@@ -197,7 +198,7 @@ public class Assignment1 {
 		public void myTestMethod3 (){
 			System.out.println("\n");
 			System.out.println("Executing Test 3:");
-			assertEquals("invalid triangle", Triangle(3,1,2));
+			assertEquals("invalid triangle", Triangle(1,2,3));
 			System.out.println("\n");
 			
 		}
@@ -329,11 +330,46 @@ public class Assignment1 {
 		}
 		
 		@Test
-		public void codecoverageTestcase1 (){
-			assertEquals("right scalene triangle", Triangle(3,5,4));
+		public void equivalenceexternaltesting1 (){
+			assertEquals("not right equilateral triangle", Triangle(3,3,3));
 		}
 		
-		*/
+		@Test
+		public void equivalenceexternaltesting2 (){
+			assertEquals("not right isosceles triangle", Triangle(6,6,4));
+		}
+		
+		@Test
+		public void equivalenceexternaltesting3 (){
+			assertEquals("invalid triangle", Triangle(12,8,4));
+		}
+		
+		@Test
+		public void equivalenceexternaltesting4 (){
+			assertEquals("invalid triangle", Triangle(3,1,2));
+		}
+		
+		@Test
+		public void equivalenceexternaltesting5 (){
+			assertEquals("Error with Inputs", Triangle(1,-1,1));
+		}
+		
+		@Test
+		public void equivalenceexternaltesting6 (){
+			assertEquals("invalid triangle", Triangle(2,4,6));
+		}
+		@Test
+		public void equivalenceexternaltesting7 (){
+			assertEquals("invalid triangle", Triangle(5,10,20));
+		}
+		@Test
+		public void equivalenceexternaltesting8 (){
+			assertEquals("invalid triangle", Triangle(5,6,1));
+		}
+		@Test
+		public void equivalenceexternaltesting9 (){
+			assertEquals("invalid triangle", Triangle(1,2,50));
+		}		
 		
 	}
 
