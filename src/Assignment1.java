@@ -328,7 +328,10 @@ public class Assignment1 {
 			System.out.println("Executing Test 5:");
 			assertEquals("invalid triangle", Triangle(1,2,50));
 		}
-		
+		@Test
+		public void codecoverage1 (){
+			assertEquals("right scalene triangle", Triangle(3,5,4));
+		}
 		@Test
 		public void equivalenceexternaltesting1 (){
 			assertEquals("not right equilateral triangle", Triangle(3,3,3));
