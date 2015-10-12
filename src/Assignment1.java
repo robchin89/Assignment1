@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class Assignment1 {
-/*
+
 	public static void main(String[] args) {
 
 	 String test2222 ="test22222";
@@ -39,7 +39,7 @@ public class Assignment1 {
 			System.exit(0);
 		}
 	}
-*/	
+	
 	//my new change
 	
 
@@ -174,7 +174,7 @@ public class Assignment1 {
 
 		
 
-	
+/*	
 	
 		//junit test
 		@Test
@@ -332,6 +332,8 @@ public class Assignment1 {
 		public void codecoverageTestcase1 (){
 			assertEquals("right scalene triangle", Triangle(3,5,4));
 		}
+		
+		*/
 		
 	}
 
